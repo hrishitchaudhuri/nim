@@ -1,0 +1,6 @@
+1. Create basic Nim implementation with computer playing best game. /-- done --/
+2. Modularize code into separate src folder.
+3. Create test cases (+ executable) and keep in sample and test folder.
+4. Create a makefile/Finish doc work + comments.
+5. Initialize a GitHub repo with README.
+6. Include texts for explaining Nim-theorems + game-play.
