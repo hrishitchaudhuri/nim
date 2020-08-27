@@ -10,8 +10,8 @@ Players take turns removing objects from heaps. I refer to these 'objects' as 'c
 
 ### Running the program
 At this moment, only a Python command line game is available. <br/> <br/>
-To run Python, cd into "Python" <br/>
-`cd Python/`
+To run Python, cd into "PYTHON" <br/>
+`cd PYTHON/`
 <br/><br/> Run the main file with Python 3.x <br/>
 `python3 main.py`
 <br/><br/> Make sure you have Python 3.x installed, this will not work with lower versions.
@@ -20,4 +20,7 @@ To run Python, cd into "Python" <br/>
 <br/><br/> Run the executable using dotslash <br/>
 `./main.py`
 
-<br/><br/> Voila! You're all set!
+<br/><br/> Voila! You're all set! <br/> <br/>
+
+### Future Work
+I'm planning an implementation of this on the Love2D engine to create a better UI than the command line environment. Also, will probably add misere play as well as some other nim variants in the future.
