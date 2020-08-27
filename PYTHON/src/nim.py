@@ -59,7 +59,7 @@ def int_error(func, *args):
     """
     
     print("Please enter a valid integer.")
-    func(*args)
+    return func(*args)
 
     
 def input_heaps():
@@ -79,7 +79,7 @@ def input_heaps():
             a=int(input("Enter valid number of heaps: "))
     
     except ValueError:
-        int_error(input_heaps)
+        a=int_error(input_heaps)
     
     finally:
         return a
@@ -104,10 +104,13 @@ def input_heapsizes(a):
     try:
         heaps=[]
         for i in range(a):
-            heaps.append(int(input("Enter size of heap %d: " % i)))
+            ip=int(input("Enter size of heap %d: " % i))
+            while ip <= 0:
+                ip=int(input("Enter valid size of heap %d: " % i))
+            heaps.append(ip)
     
     except ValueError:
-        int_error(input_heapsizes, a)
+        heaps=int_error(input_heapsizes, a)
     
     finally:
         return heaps
@@ -135,8 +138,7 @@ def input_start(ipstring):
             player_turn=input("Please enter a valid response. [Y/N]? ")
     
     except ValueError:
-        print("Please enter valid string")
-        input_start()
+        player_turn=input_start("Please enter valid string. [Y/N]" )
         
     finally:
         return player_turn
@@ -160,11 +162,11 @@ def heap_choice(game):
     
     try:
         heap=int(input("Enter heap number to remove coins from: "))
-        while heap not in range(0, len(game.heaps)):
+        while heap not in range(0, len(game.heaps)) or game.heaps[heap] <= 0:
             heap=int(input("Enter valid heap number: "))
     
     except ValueError:
-        int_error(heap_choice, game)
+        heap=int_error(heap_choice, game)
     
     finally:
         return heap
@@ -194,7 +196,7 @@ def count_choice(heap, game):
             count=int(input("Enter number in range: "))
         
     except ValueError:
-        int_error(count_choice, heap, game)
+        count=int_error(count_choice, heap, game)
         
     finally:
         return count
