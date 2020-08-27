@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """
 Created on Tue Aug 25 17:31:20 2020
 
@@ -12,7 +12,11 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'src/
 import nim
 
 def main():
-    nim.startGame()
-        
+	try:
+		nim.startGame()
+	except:
+		print("")
+		sys.exit(0)
+
 if __name__=='__main__':
     main()
