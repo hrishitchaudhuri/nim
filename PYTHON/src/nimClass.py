@@ -37,8 +37,8 @@ class nimGame:
 
         Returns
         -------
-        TYPE
-            DESCRIPTION.
+        int
+            Grundy number of current game state.
 
         """
         
