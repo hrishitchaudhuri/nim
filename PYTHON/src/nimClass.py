@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Aug 26 17:58:59 2020
+nimClass.py
+===============
+Module containing class description for nim game.
 
 @author: hrishit chaudhuri
 @github: https://www.github.com/hrishitchaudhuri
@@ -9,6 +11,10 @@ import functools
 import random as rr
 
 class nimGame:
+    """
+    A class to describe a nim game.
+    """
+
     def __init__(self, heaps, player_turn):
         """
         nimGame constructor.
@@ -37,8 +43,8 @@ class nimGame:
 
         Returns
         -------
-        TYPE
-            DESCRIPTION.
+        int
+            Grundy number for game.
 
         """
         

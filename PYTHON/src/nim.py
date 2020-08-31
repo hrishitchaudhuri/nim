@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Aug 26 17:58:59 2020
+nim.py
+============
+Module containing functions necessary for nim game.
 
 @author: hrishit chaudhuri
 @github: https://www.github.com/hrishitchaudhuri
