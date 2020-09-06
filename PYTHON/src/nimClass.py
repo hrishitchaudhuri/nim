@@ -44,12 +44,8 @@ class nimGame:
         Returns
         -------
         int
-<<<<<<< HEAD
-            Grundy number for game.
-=======
             Grundy number of current game state.
->>>>>>> 8102d94a7b01cbe4e0b6ce99d4e111c88e20a7fb
-
+            
         """
         
         return functools.reduce(lambda s, t: s^t, self.heaps)
