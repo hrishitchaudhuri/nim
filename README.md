@@ -11,16 +11,27 @@ Players take turns removing objects from heaps. I refer to these 'objects' as 'c
 ### Running the program
 At this moment, only a Python command line game is available. <br/> <br/>
 To run Python, cd into "PYTHON" <br/>
-`cd PYTHON/`
+```
+cd PYTHON/
+```
 <br/><br/> Run the main file with Python 3.x <br/>
-`python3 main.py`
+```
+python3 main.py
+```
 <br/><br/> Make sure you have Python 3 installed; this will not work with Python 2.
 <br/><br/> Alternatively, you can directly execute it by changing its permissions on the shell <br/>
-`chmod +x main.py`
+```
+chmod +x main.py
+```
 <br/><br/> Run the executable <br/>
-`./main.py`
+```
+./main.py
+```
 
 <br/><br/> Voila! You're all set! <br/> <br/>
+
+### Read the Docs
+Documentation found [here](https://nimsim.readthedocs.io/en/latest/). <br/><br/> 
 
 ### Future Work
 I'm planning an implementation of this on the Love2D engine to create a better UI than the command line environment. Also, will probably add misere play as well as some other nim variants in the future.
