@@ -33,5 +33,9 @@ chmod +x main.py
 ### Read the Docs
 Documentation found [here](https://nimsim.readthedocs.io/en/latest/). <br/><br/> 
 
+  
+### License
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=plastic)](https://github.com/TheNetAdmin/Makefile-Templates/blob/master/LICENSE)
+
 ### Future Work
 I'm planning an implementation of this on the Love2D engine to create a better UI than the command line environment. Also, will probably add misere play as well as some other nim variants in the future.
